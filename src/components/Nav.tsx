@@ -2,13 +2,13 @@ import NavItem from './NavItem';
 
 export default function Nav() {
   return (
-    <div>
-      <ul className='flex gap-5'>
-        <NavItem text='Remindeen' />
-        <NavItem text='Preview' />
-        <NavItem text='Gallery' />
-        <NavItem text='About Us' />
+    <nav>
+      <ul className='flex gap-5 '>
+        <NavItem text='Remindeen' toId='remindeen' />
+        <NavItem text='Preview' toId='preview' />
+        <NavItem text='Gallery' toId='gallery' />
+        <NavItem text='About Us' toId='about' />
       </ul>
-    </div>
+    </nav>
   );
 }

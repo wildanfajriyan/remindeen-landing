@@ -18,7 +18,7 @@ export default function Home() {
     <div className={ruhl.className}>
       <Header />
 
-      <section>
+      <section id='remindeen'>
         <div className='block items-center gap-12 px-10 lg:flex lg:h-screen lg:m-0 m-10'>
           <div className='lg:flex-6/12 lg:h-1/2'>
             <div className='border-b-2 text-center lg:text-left'>
@@ -40,7 +40,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section>
+      <section id='preview'>
         <div className='block lg:h-screen lg:flex flex-col items-center gap-5 px-10'>
           <div>
             <div className='lg:flex flex-col items-center'>
@@ -69,7 +69,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section>
+      <section id='gallery'>
         <div className='block lg:h-screen lg:flex flex-col items-center justify-center px-10 mt-10'>
           <div className='border-b-2 text-center'>
             <Headline text='Gallery' />
@@ -96,7 +96,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section>
+      <section id='about'>
         <div className='block lg:h-screen lg:flex flex-col items-center justify-center text-center px-10'>
           <div className='border-b-2'>
             <Headline text='About Us' />
