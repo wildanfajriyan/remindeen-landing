@@ -19,14 +19,14 @@ export default function Home() {
       <Header />
 
       <section>
-        <div className='block items-center gap-12 px-10 lg:flex lg:h-screen'>
+        <div className='block items-center gap-12 px-10 lg:flex lg:h-screen lg:m-0 m-10'>
           <div className='lg:flex-6/12 lg:h-1/2'>
-            <div className='border-b-2'>
+            <div className='border-b-2 text-center lg:text-left'>
               <Headline text='Remindeen' />
             </div>
           </div>
-          <div className='lg:flex-6/12'>
-            <p className='text-sm lg:text-xl'>
+          <div className='lg:flex-6/12 mt-4 lg:mt-0'>
+            <p className='text-sm text-center lg:text-xl lg:text-left'>
               Remindeen adalah sebuah browser extension yang dirancang khusus
               untuk menjadi pengingat dan sumber inspirasi bagi umat Muslim
               dalam menjalani aktivitas sehari-hari. Dengan fitur utama berupa
@@ -41,12 +41,14 @@ export default function Home() {
       </section>
 
       <section>
-        <div className='h-screen flex flex-col items-center gap-5 px-10'>
+        <div className='block lg:h-screen lg:flex flex-col items-center gap-5 px-10'>
           <div>
-            <div className='flex flex-col items-center'>
-              <Headline text='Preview' />
-              <div className='w-8/12 mt-5'>
-                <p className='text-xl text-center'>
+            <div className='lg:flex flex-col items-center'>
+              <div className='border-b-2 text-center'>
+                <Headline text='Preview' />
+              </div>
+              <div className='lg:w-8/12 mt-4 w-full'>
+                <p className='text-sm text-center lg:text-xl'>
                   Remindeen adalah sebuah browser extension yang dirancang
                   khusus untuk menjadi pengingat dan sumber inspirasi bagi umat
                   Muslim dalam menjalani aktivitas sehari-hari
@@ -54,11 +56,11 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div>
+          <div className='my-4'>
             <Image src={previewPic} alt='preview' />
           </div>
           <div>
-            <p className='text-xl'>
+            <p className='text-sm lg:text-xl text-center lg:text-left'>
               Remindeen adalah sebuah browser extension yang dirancang khusus
               untuk menjadi pengingat dan sumber inspirasi bagi umat Muslim
               dalam menjalani aktivitas sehari-hari
@@ -68,35 +70,39 @@ export default function Home() {
       </section>
 
       <section>
-        <div className='h-screen flex flex-col items-center justify-center'>
-          <div className='text-center mb-5'>
+        <div className='block lg:h-screen lg:flex flex-col items-center justify-center px-10 mt-10'>
+          <div className='border-b-2 text-center'>
             <Headline text='Gallery' />
-            <p className='text-xl mt-5'>
-              Dengan berbagai background tidak hanya menampilkan sisi islamic
-              namun keindahan serta berbagai macam kenikmatan
-            </p>
           </div>
-          <div className='flex flex-col gap-5 items-center'>
+          <p className='text-sm mt-5 lg:text-xl'>
+            Dengan berbagai background tidak hanya menampilkan sisi islamic
+            namun keindahan serta berbagai macam kenikmatan
+          </p>
+          <div className='block lg:flex flex-col gap-5 items-center text-center mt-4'>
             <div className=''>
-              <Image src={galleryOnePic} alt='one' />
+              <Image src={galleryOnePic} alt='one' className='m-auto mb-4' />
             </div>
-            <div className='flex flex-wrap gap-5'>
-              <Image src={galleryTwoPic} alt='two' />
-              <Image src={galleryThreePic} alt='three' />
-              <Image src={galleryFourPic} alt='four' />
-              <Image src={galleryFivePic} alt='five' />
+            <div className='block lg:flex flex-wrap gap-5'>
+              <Image src={galleryTwoPic} alt='two' className='m-auto mb-4' />
+              <Image
+                src={galleryThreePic}
+                alt='three'
+                className='m-auto mb-4'
+              />
+              <Image src={galleryFourPic} alt='four' className='m-auto mb-4' />
+              <Image src={galleryFivePic} alt='five' className='m-auto mb-4' />
             </div>
           </div>
         </div>
       </section>
 
       <section>
-        <div className='h-screen lg:flex flex-col items-center justify-center'>
-          <div>
+        <div className='block lg:h-screen lg:flex flex-col items-center justify-center text-center px-10'>
+          <div className='border-b-2'>
             <Headline text='About Us' />
           </div>
-          <div className='w-1/2 mt-5'>
-            <p className='text-xl'>
+          <div className='lg:w-1/2 mt-5 w-full'>
+            <p className='text-sm lg:text-xl'>
               Serdadu Code adalah sebuah tim yang terdiri dari para ahli
               teknologi informasi yang berdedikasi untuk menciptakan aplikasi
               inovatif dan berdampak positif. Dalam kebersamaan mereka, setiap
