@@ -8,6 +8,7 @@ import galleryTwoPic from '../../public/2.png';
 import galleryThreePic from '../../public/3.png';
 import galleryFourPic from '../../public/4.png';
 import galleryFivePic from '../../public/5.png';
+import Footer from '@/components/Footer';
 
 const ruhl = Frank_Ruhl_Libre({
   subsets: ['latin'],
@@ -33,7 +34,7 @@ export default function Home() {
               jadwal salat yang akurat sesuai lokasi pengguna, Remindeen
               membantu memastikan ibadah kamu selalu tepat waktu. Selain itu,
               Remindeen juga menampilkan dakwah singkat berupa ayat-ayat
-              Al-Qur'an dan hadits pilihan yang memberi motivasi dan menyejukkan
+              Al-Qur&apos;an dan hadits pilihan yang memberi motivasi dan menyejukkan
               hati.
             </p>
           </div>
@@ -112,6 +113,7 @@ export default function Home() {
           </div>
         </div>
       </section>
+      <Footer/>
     </div>
   );
 }
