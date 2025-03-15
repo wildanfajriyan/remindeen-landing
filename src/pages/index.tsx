@@ -98,7 +98,7 @@ export default function Home() {
       </section>
 
       <section id='about'>
-        <div className='block lg:h-screen lg:flex flex-col items-center justify-center text-center px-10'>
+        <div className='block lg:h-screen lg:flex flex-col items-center justify-center text-center px-10 pb-4'>
           <div className='border-b-2'>
             <Headline text='About Us' />
           </div>
@@ -113,6 +113,8 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <hr />
       <Footer/>
     </div>
   );

@@ -1,6 +1,6 @@
 export default function Footer() {
     return (
-        <footer className="flex flex-col items-center justify-center p-5  text-white">
+        <footer className="flex flex-col items-center justify-center p-5">
             <div className="flex flex-col md:flex-row md:justify-between w-full max-w-6xl">
                 <div className="flex flex-col space-y-2 text-center md:text-left">
                     <a href="#remindeen" className="hover:underline">Home</a>
